@@ -22,10 +22,10 @@ export default function Navbar() {
           </div>
 
           <div className="md:flex justify-end items-center gap-3 hidden">
-            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="#"><IoSearchOutline /></Link>
-            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="#">Artikel</Link>
-            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="#">Imtihan</Link>
-            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="#">Tentang</Link>
+            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="/search"><IoSearchOutline /></Link>
+            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="/artikel">Artikel</Link>
+            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="/imtihan">Imtihan</Link>
+            <Link className="bg-gray-0 hover:bg-gray-100 rounded py-1 px-2 transition-all" href="/tentang">Tentang</Link>
           </div>
 
           <div className="md:hidden flex justify-end items-center">
@@ -35,10 +35,10 @@ export default function Navbar() {
       </header>
       { menuOpen && 
       <div className="w-fit mt-2 ps-3 pe-2 py-3 absolute z-[10] right-2 flex flex-col justify-center items-end text-right gap-1 md:hidden rounded border-[1px] border-[#b5b5b5]">
-        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="#"><IoSearchOutline className="inline" /></Link>
-        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="#">Artikel</Link>
-        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="#">Imtihan</Link>
-        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="#">Tentang</Link>
+        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="/search"><IoSearchOutline className="inline" /></Link>
+        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="/artikel">Artikel</Link>
+        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="/imtihan">Imtihan</Link>
+        <Link className="bg-gray-0 hover:bg-gray-100 rounded px-2 transition-all inline" href="/tentang">Tentang</Link>
       </div> }
     </>
   );
