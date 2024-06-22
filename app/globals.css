@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-nav {
+  border-bottom: 1px solid #b5b5b5;
+}
