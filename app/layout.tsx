@@ -13,11 +13,7 @@ export const metadata: Metadata = {
   description: "Platform belajar online bagi peserta didik Ansharussunnah.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
