@@ -1,16 +1,11 @@
 import { FaArrowRight } from "react-icons/fa6";
 
-import "./home.css";
-
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Link from "next/link";
 
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="mx-auto md:container">
         <section className="hero grid justify-center md:justify-start content-center px-2 md:max-w-[867px] md:mx-auto">
           <div className="md:ps-10">
@@ -20,7 +15,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
